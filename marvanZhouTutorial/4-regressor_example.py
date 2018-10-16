@@ -4,6 +4,13 @@ from keras.models import Sequential
 from keras.layers import Dense
 import matplotlib.pyplot as plt
 
+'''
+教程地址
+https://morvanzhou.github.io/tutorials/machine-learning/keras/2-1-regressor/
+
+
+'''
+
 # create some data
 X = np.linspace(-1, 1, 200)
 np.random.shuffle(X)    # randomize the data
