@@ -1,0 +1,13 @@
+dist
+MANIFEST
+*.pyc
+*.egg-info
+*.egg
+docs/_build/
+.sass-cache
+.coverage
+.tox
+.eggs
+build
+Pipfile.lock
+
