@@ -10,4 +10,4 @@ docs/_build/
 .eggs
 build
 Pipfile.lock
-
+.idea

@@ -30,4 +30,4 @@ pipenv graph
 1. Python Numpy Tutorial
 	- http://cs231n.github.io/python-numpy-tutorial/
 	- https://docs.scipy.org/doc/numpy-1.15.1/reference/arrays.ndarray.html
-
+    - https://docs.scipy.org/doc/numpy/user/quickstart.html
