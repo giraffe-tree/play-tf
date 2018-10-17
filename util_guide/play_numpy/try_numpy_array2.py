@@ -21,3 +21,4 @@ print(e)                     # Might print "[[ 0.91940167  0.08143941]
 print(e.data[1,1])
 print(e.size)
 print(a.size)
+
