@@ -13,3 +13,4 @@ Pipfile.lock
 .idea
 logs
 .idea
+MNIST_data
