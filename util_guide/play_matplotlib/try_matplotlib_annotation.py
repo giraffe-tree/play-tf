@@ -18,7 +18,7 @@ plt.ylabel("i am y")
 
 # 这里要加 逗号,否则 plt.legend(handles=[l1, l2], loc='best') 中会报错
 # plot 是画线, scatter 画点
-l1, = plt.scatter(x, y2, label='up')
+l1, = plt.plot(x, y2, label='up')
 l2, = plt.plot(x, y1, label='down', color="red", linewidth=1.0, linestyle="--")
 
 # handles=,labels=,
@@ -26,8 +26,23 @@ plt.legend(handles=[l1, l2], labels=['aaa', 'bbb'], loc='best')
 
 # 标注点
 x0 = 1
-y0 = 2*x0 +1
+y0 = 1
+# blue
+plt.scatter(x0, y0, s=50, color='b')
+# black
+plt.plot([x0, x0], [y0, -2], 'k--', lw=2.5)
 
-plt.scatter()
+# method 1 加点的字注解
+# 正则
+plt.annotate(r'$x+y=%s$'%y0, xy=(x0, y0), xycoords='data', xytext=(+30, -30),
+             textcoords='offset points', fontsize=16,
+             arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=.2'))
+# method 2
+# plt.text(-1,1,r'$this\ us\ the\ some\ text.\ \mu\sigma_i\ \alpha_T$',
+#          fontdict={'size':16,'color':'r'})
 
 plt.show()
+
+
+
+

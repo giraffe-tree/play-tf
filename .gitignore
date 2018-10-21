@@ -11,3 +11,5 @@ docs/_build/
 build
 Pipfile.lock
 .idea
+logs
+.idea
