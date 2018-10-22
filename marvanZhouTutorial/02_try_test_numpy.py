@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 # create some data
 X = np.linspace(-1, 1, 200)
+# 打乱数据的顺序
 np.random.shuffle(X)    # randomize the data
 Y = 0.5 * X + 2 + np.random.normal(0, 0.05, (200, ))
 # plot data
