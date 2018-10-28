@@ -16,9 +16,9 @@ mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 
 
 def add_layer(inputs, in_size, out_size, n_layer, activation_function=None):
-    '''
+    """
     添加一个神经层
-    '''
+    """
     layer_name = 'layer%s' % n_layer
     with tf.name_scope(layer_name):
         with tf.name_scope('weithts'):
@@ -51,7 +51,6 @@ def compute_accuracy(v_xs, v_ys):
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
     result = sess.run(accuracy, feed_dict={xs: v_xs, ys: v_ys})
     return result
-
 
 # define placeholder for inputs to network
 xs = tf.placeholder(tf.float32, [None, 784])  # 28x28
